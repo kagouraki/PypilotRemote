@@ -178,6 +178,13 @@ For USB programming or debugging:
 
 ---
 
+## Assembly
+
+You can find the assembly guide here 
+[assembly wiki](https://github.com/kagouraki/PypilotRemote/wiki/Assembly)
+
+---
+
 ## Video
 
 📺 **Demo video:**  
