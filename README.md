@@ -69,9 +69,134 @@ screen mounting, buttons, and connectors.
 
 ---
 
+## Button Functions
+
+### Autopilot Control
+- **Standby**  
+  Disengages the autopilot
+
+- **Auto**  
+  Engages the autopilot and commands the current heading
+
+- **Auto (long press > 3 s)**  
+  Engages autopilot using the **previous heading command**
+
+### Course Adjustment
+- **−1** → Port 1°  
+- **−10** → Port 10°  
+- **+1** → Starboard 1°  
+- **+10** → Starboard 10°
+
+### Mode & Interface
+- **Mode**  
+  Cycles through available steering modes
+
+- **Backlight**  
+  Toggles backlight on/off
+
+- **Backlight (long press > 10 s)**  
+  Forces AP mode
+
+- **Info**  
+  Cycles through information screens and returns to home
+
+- **Backlight + Mode (long press > 5 s)**  
+  Restarts the Pypilot Remote
+
+### Notes
+- When **not on the home screen**, only **Auto** and **Standby** are active
+- On the console log screen:
+  - **+1 / +10** scroll up and down
+
+---
+
+## Connection Logic
+
+1. On boot, the device attempts to connect to the configured Wi-Fi SSID  
+   → Wi-Fi icon flashes **RED**
+2. After the configured number of retries:
+   - If unsuccessful → switches to **AP mode** (Wi-Fi icon **YELLOW**)
+3. Once Wi-Fi is connected:
+   - Tries to connect to the pypilot TCP server indefinitely  
+   → Wi-Fi icon flashes **GREEN**
+4. When connected to pypilot:
+   - Wi-Fi icon becomes **solid GREEN**
+   - Device is fully operational
+
+---
+
+## Configuration Web Interface
+
+When in **AP mode**, access the configuration interface at:
+
+```
+http://192.168.4.1
+```
+
+### Available Settings
+
+- **WiFi SSID** – Network to connect to
+- **WiFi Password**
+- **Max WiFi Retries** – Attempts before falling back to AP mode
+- **Pypilot IP** – IP address of the pypilot server
+- **TCP Port** – Default: `23322`
+- **UDP Port** – Not used
+- **Brightness (Backlight Off)** – 0–255
+- **Brightness (Backlight On)** – 0–255
+- **Key Backlight Brightness** – 0–255
+- **Start Theme** – Theme when backlight is off
+- **Backlight Theme** – Theme when backlight is on
+- **Rescan Wi-Fi** – Refresh available networks
+- **OTA Update** – Upload firmware `.bin` file
+
+---
+
+## Electrical Connections
+
+The device uses **4 pins** from the SeatalkNG connector:
+
+| Color | Signal |
+|-----|-------|
+| Red | +12 V |
+| Black | GND |
+| Blue | D+ |
+| White | D− |
+
+### Important Warning
+
+⚠️ **DO NOT CONNECT TO A SEATALKNG NETWORK**
+
+- Blue and white lines are **CAN-H / CAN-L**
+- Connecting them to the ESP32 **will destroy the MCU**
+
+### USB Programming (Optional)
+
+For USB programming or debugging:
+- Splice a USB cable
+- Connect **D+**, **D−**, and **GND**
+- A serial port will appear on the host computer
+
+---
+
+## Video
+
+📺 **Demo video:**  
+*(Placeholder – link will be added once published on YouTube)*
+
+---
+
 ## License
 
 This project is licensed under the  
 **GNU General Public License v3.0 (GPL-3.0-only)**.
 
 See the `LICENSE` file for details.
+
+---
+
+## Contributing
+
+Contributions, improvements, and adaptations to other hardware platforms
+are welcome — as long as they respect the GPL.
+
+Let’s keep open source alive.
