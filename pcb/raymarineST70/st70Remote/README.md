@@ -31,11 +31,11 @@ LCSCpartNum.csv
 This file contains LCSC part numbers and additional information useful for ordering parts.
 
 <p align="center">
-  <img src="assets/PypilotRemoteFront.jpg" alt="pcbFront" width="800"/>
+  <img src="../../../assets/PypilotRemoteFront.jpg" alt="pcbFront" width="800"/>
 </p>
 
 <p align="center">
-  <img src="assets/PypilotRemoteBack.jpg.jpg" alt="pcbBack" width="800"/>
+  <img src="../../../assets/PypilotRemoteBack.jpg" alt="pcbBack" width="800"/>
 </p>
 
 ---
@@ -53,7 +53,7 @@ To populate it:
 This approach was chosen to ensure mechanical compatibility with the original enclosure.
 
 <p align="center">
-  <img src="assets/desolderTHIS.jpg" alt="You need to desolder this" width="800"/>
+  <img src="../../../assets/desolderTHIS.jpg" alt="You need to desolder this" width="800"/>
 </p>
 
 ---
