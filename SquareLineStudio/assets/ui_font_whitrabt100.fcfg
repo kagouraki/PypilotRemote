@@ -1,0 +1,16 @@
+{
+  "codename": "whitrabt100",
+  "ttf_path": "/assets/whitrabt.ttf",
+  "bin_path": "/assets/ui_font_whitrabt100.bin",
+  "c_path": "/assets/ui_font_whitrabt100.c",
+  "cfg_path": "/assets/ui_font_whitrabt100.fcfg",
+  "size": 100,
+  "bpp": 8,
+  "letters": 0,
+  "ranges": [
+    "0x30-0x39"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

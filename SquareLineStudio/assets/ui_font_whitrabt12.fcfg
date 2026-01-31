@@ -1,0 +1,16 @@
+{
+  "codename": "whitrabt12",
+  "ttf_path": "/assets/whitrabt.ttf",
+  "bin_path": "/assets/ui_font_whitrabt12.bin",
+  "c_path": "/assets/ui_font_whitrabt12.c",
+  "cfg_path": "/assets/ui_font_whitrabt12.fcfg",
+  "size": 12,
+  "bpp": 1,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

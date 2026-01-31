@@ -1,1 +1,12 @@
-/home/labcnc/SquareLineStudio/LVGLui/pypilot.slp
+{
+    "uiExportFolderPath": "/home/labcnc/git/PypilotRemote/firmware/ui",
+    "projectExportFolderPath": "/home/labcnc/SquareLineStudio/LVGLui",
+    "drive_stdio": "-",
+    "drive_stdio_path": "",
+    "drive_posix": "-",
+    "drive_posix_path": "",
+    "drive_win32": "-",
+    "drive_win32_path": "",
+    "drive_fatfs": "-",
+    "drive_fatfs_path": ""
+}
