@@ -188,7 +188,9 @@ You can find the assembly guide here
 ## Video
 
 📺 **Demo video:**  
-*(Placeholder – link will be added once published on YouTube)*
+
+[Interface and funtionality video](https://youtu.be/A5Dgf8vR-sQ)
+
 
 ---
 
